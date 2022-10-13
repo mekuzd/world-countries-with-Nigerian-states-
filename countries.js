@@ -18,9 +18,8 @@ function addcountriestoselectTag(arrdata) {
 function populatestate(event) {
     let CountryName = event.target.value
     let sel_state = country_data.filter((value) => {
-        return value.name == CountryName  
+        return value.name == CountryName
     })
-console.log(sel_state);
     let statelist = sel_state[0].states
     document.getElementById("states").innerHTML = " "
     for (let index = 0; index < statelist.length; index++) {
